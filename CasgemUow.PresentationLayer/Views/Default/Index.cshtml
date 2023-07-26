@@ -1,0 +1,26 @@
+﻿@model CasgemUow.EntityLayer.Concrete.CustomerProcess
+@{
+    Layout = null;
+}
+
+<div class="container">
+    <br />
+    <form method="post">
+        <label>Gönderen  Id</label>
+        <input type="text"  asp-for="SenderID" class="from-control" />
+        <br />
+
+         <label>Alıcı Id</label>
+        <input type="text"  asp-for="ReceiverID" class="from-control" />
+        <br />
+
+         <label>Miktar  </label>
+        <input type="text"  asp-for="Amount" class="from-control" />
+        <br />
+
+        <button class="btn btn-success">Para Gönder</button>
+
+    </form>
+</div>
+
+
